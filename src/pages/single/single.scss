@@ -1,0 +1,81 @@
+.single {
+    display: flex;
+
+    .singleContainer {
+        flex: 6;
+        .top {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            .left {
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                padding: 20px;
+                flex: 1;
+                position: relative;
+
+                .editButton {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    background-color: rgba(65, 105, 225, 0.156);
+                    color: royalblue;
+                    padding: 5px;
+                    font-size: 12px;
+                    cursor: pointer;
+                    border-radius: 0px 0px 0px 5px;
+                }
+
+                .item {
+                    display: flex;
+                    gap: 20px;
+
+                    .itemImg {
+                        object-fit: cover;
+                        border-radius: 50%;
+                        width: 100px;
+                        height: 100px;
+                    }
+
+                    .details {
+                        .itemTitle {
+                            margin-bottom: 10px;
+                            color: #555;
+                        }
+
+                        .detailItem {
+                            margin-bottom: 10px;
+                            font-size: 14px;
+
+                            .itemKey {
+                                font-weight: bold;
+                                color: gray;
+                                margin-right: 6px;
+                            }
+
+                            .itemValue {
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                flex: 2;
+            }
+        }
+
+        .bottom{
+            padding: 20px;
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            margin:10px 20px;
+
+        }
+
+        .title {
+            font-size: 16px;
+            color:lightgray;
+            margin-bottom: 20px;
+        }
+    }
+}
